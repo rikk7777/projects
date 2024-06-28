@@ -13,7 +13,7 @@ logger = logging.getLogger(__name__)
 # Берем токен бота из файла .env 
 env = Env()
 env.read_env()
-BOT_TOKEN=env('BOT_TOKEN')
+BOT_TOKEN='7284383193:AAHf6TnCgB0gW4wGIDYn79Vi7Iv2ukwOor4'
 
 # Функция конфигурирования и запуска бота
 async def main():

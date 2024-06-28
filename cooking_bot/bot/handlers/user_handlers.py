@@ -1,9 +1,9 @@
 from aiogram import F, Router
 from aiogram.filters import Command, CommandStart
 from aiogram.types import Message
-from lexicon.lexicon import LEXICON
-from keyboards.keyboards import menu_kb, yes_no_kb
-from parsing.parsing import get_bludo
+from lexicon import LEXICON
+from keyboards import menu_kb, yes_no_kb
+from parsing import get_bludo
 from aiogram.types import FSInputFile
 
 router = Router()

@@ -24,7 +24,7 @@ async def main():
     logger.info('Starting bot')
     
     # Загружаем конфиг в переменную config
-    config: Config = load_config()
+    config: Config = load_config('env/')
 
     # Инициализируем бот и диспетчер
     bot = Bot(

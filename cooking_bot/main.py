@@ -6,7 +6,6 @@ from aiogram.client.default import DefaultBotProperties
 from aiogram.enums import ParseMode
 from environs import Env
 from handlers import user_handlers
-from config import Config, load_config
 
 # Инициализируем логгер
 logger = logging.getLogger(__name__)
@@ -22,13 +21,11 @@ async def main():
 
     # Выводим в консоль информацию о начале запуска бота
     logger.info('Starting bot')
-    
-    # Загружаем конфиг в переменную config
-    config: Config = load_config('.env')
+
 
     # Инициализируем бот и диспетчер
     bot = Bot(
-        token=config.tg_bot.token,
+        token='7284383193:AAHf6TnCgB0gW4wGIDYn79Vi7Iv2ukwOor4',
         default=DefaultBotProperties(parse_mode=ParseMode.HTML)
     )
     dp = Dispatcher()

@@ -3,7 +3,7 @@ services:
     build:
       context: .
     env_file:
-      - env/.env
+      - .env
     restart: on-failure
     volumes: 
       - .bot:/bot
